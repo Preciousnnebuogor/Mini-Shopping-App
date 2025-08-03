@@ -1,0 +1,92 @@
+export const Shopping = [
+  {
+    catogory: "shirt",
+    name: " vintage shirt",
+    img: "/assets/shirt1.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "polo",
+    name: "Thick-polo",
+    img: "/assets/polo.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "shot",
+    name: "shot",
+    img: "/assets/shot.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "trouser",
+    name: "trouser",
+    img: "/assets/trouser.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "shirt",
+    name: " vintage shirt",
+    img: "/assets/shirt1.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "polo",
+    name: "Thick-polo",
+    img: "/assets/polo.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "shot",
+    name: "shot",
+    img: "/assets/shot.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "trouser",
+    name: "trouser",
+    img: "/assets/trouser.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "shirt",
+    name: " vintage shirt",
+    img: "/assets/shirt1.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "polo",
+    name: "Thick-polo",
+    img: "/assets/polo.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "shot",
+    name: "shot",
+    img: "/assets/shot.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "trouser",
+    name: "trouser",
+    img: "/assets/trouser.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "polo",
+    name: "Thick-polo",
+    img: "/assets/polo.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "shot",
+    name: "shot",
+    img: "/assets/shot.jpeg",
+    price: "#3,000",
+  },
+  {
+    catogory: "trouser",
+    name: "trouser",
+    img: "/assets/trouser.jpeg",
+    price: "#3,000",
+  },
+];
