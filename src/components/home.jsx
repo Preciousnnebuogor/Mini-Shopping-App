@@ -4,6 +4,7 @@ import { Shopping } from "./data";
 export default function Home() {
   const [textSearch, setTextSearch] = useState("");
   const [search, setSearch] = useState([]);
+  const [limit, setLimit] = useState(4);
 
   function HandleSubmit() {
     if (textSearch === "") {
@@ -11,18 +12,28 @@ export default function Home() {
       return;
     }
 
-    //     const filterAll = Shopping.filter((data)=> data.name.toLowerCase().includes(textSearch.toLowerCase())
-    // )
-    // setSearch(filterAll);
+    const filterAll = Shopping.filter((data) =>
+      data.name.toLowerCase().includes(textSearch.toLowerCase())
+    );
+    setSearch(filterAll);
   }
 
   useEffect(() => {
     setSearch(Shopping);
   }, []);
 
+  function handleNext() {
+    setLimit((prev) => prev + 4);
+  }
+
+  function handlePrev() {
+    if (limit <= 4) return;
+    setLimit((prev) => prev - 4);
+  }
+
   return (
     <div>
-      <div>
+      <div className="search-container">
         <input
           onChange={(e) => {
             setTextSearch(e.target.value);
@@ -37,10 +48,10 @@ export default function Home() {
         <button onClick={HandleSubmit}>Enter</button>
       </div>
 
-      <div>
-        {search.map((value) => {
+      <div className="section">
+        {search.slice(0, limit).map((value) => {
           return (
-            <div>
+            <div className="showpart">
               <p>{value.catogory}</p>
               <p>{value.name}</p>
               <img src={value.img} />
@@ -48,6 +59,11 @@ export default function Home() {
             </div>
           );
         })}
+      </div>
+
+      <div className="button">
+        <button onClick={handleNext}>Next</button>
+        <button onClick={handlePrev}>Previous</button>
       </div>
     </div>
   );

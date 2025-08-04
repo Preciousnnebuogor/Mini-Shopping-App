@@ -9,13 +9,92 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
-.container {
+.search-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 20px;
-  /* max-width: 75%; */
-  /* height: 100vh; */
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
 }
+
+.search-container input {
+  padding: 10px 15px;
+  width: 250px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #4CAF50;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per line */
+  
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.showpart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+}
+
+.showpart img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.button {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  
+  /* color: white; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #45a049; /* darker green on hover */
+}
+
+.button button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
