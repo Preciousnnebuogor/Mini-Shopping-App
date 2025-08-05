@@ -4,8 +4,8 @@
   margin: 0;
 }
 body {
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +17,7 @@ body {
   align-items: center;
   margin: 20px auto;
   gap: 10px;
+  
 }
 
 .search-container input {
@@ -96,5 +97,17 @@ body {
 .button button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+  
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  
+ 
 }
 
