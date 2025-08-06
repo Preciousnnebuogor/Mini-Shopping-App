@@ -1,5 +1,7 @@
 import "./App.css";
-import Home from "./components/home";
+// import Learn from "./components/learn";
+import Lesson from "./components/lesson";
+
 
 
 function App() {
